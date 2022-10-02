@@ -1,0 +1,41 @@
+ALGORITHM Second Task
+VAR
+   set1 : ARRAY_OF INTEGER[n];
+   set2 : ARRAY_OF INTEGER[m];
+   Integer k:=0;
+   set3 : ARRAY_OF INTEGER[k];
+   Integer sum :=0;
+BEGIN
+    n:=read(n);
+    m:=read(m);
+       if(n>m){
+     for(let i:=0;i<set1.length ;i++){
+        for(let j:=0;j<set2.lengh;j++){
+            if (set1[i]!=set2[j]){
+              set3.insert(set1[i]);
+              k:=k+1;
+            }
+        }
+    }
+       }
+
+  else {
+       for(let i:=0;i<set2.length ;i++){
+        for(let j:=0;j<set1.lengh;j++){
+              if (set2[i]!=set1[j]){
+              set3.insert(set2[i]);
+               k:=k+1;
+            }
+        }
+    }
+    }
+
+    
+
+     for(let l:=0 ;l<set3.length;l++){
+       sum := summ+set3[l];
+     }
+
+write(sum);
+
+END
